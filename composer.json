@@ -1,0 +1,36 @@
+{
+    "name": "czkswork",
+    "description": "基于swoole分布式服务框架(自定义修改版)",
+    "keywords": [
+        "php",
+        "swoole",
+        "czkswork"
+    ],
+    "type": "library",
+    "license": "Apache-2.0",
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.0",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "ext-xml": "*",
+        "ext-libxml": "*",
+        "ext-simplexml": "*",
+        "ext-curl": "*",
+        "ext-pdo": "*"
+    },
+    "require-dev": {
+        "swoft/swoole-ide-helper": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Czkswork\\": "src/"
+        }
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    }
+}
