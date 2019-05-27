@@ -21,7 +21,10 @@ class Configer
     public static function collect($env)
     {
         //配置文件所在的目录
-        $configDir = $env['root'] . 'config' . $env['sep'];
+        if ($env['isenv'])
+        {
+            $configDir = $env['root'] . 'config' . $env['sep'].$env['isenv'].$env['sep'];
+        }
 
         //目录下所有php文件列表
         $list = glob($configDir . '*.php');
